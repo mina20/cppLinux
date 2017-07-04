@@ -1,0 +1,45 @@
+
+
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+int i,j,l,m,words=1,p=0;
+char *a[][];
+char s[100];
+char *ps;
+printf("Enter a string:\n");
+gets(s);
+ps=&s;
+l=strlen(s);
+for(i=0;i<l;i++)
+{
+if(s[i]==' ')
+ {
+  words++;
+ }
+}
+printf("\nstring has %d words:\n",words);
+
+
+for(i=0;i<words;i++)
+{
+  for(j=0;j!=' ';j++)
+  {
+
+   do
+   {
+    a[i][j]=&ps; 
+    printf("%c",*a[i][j]);
+    ps++;
+    p++; 
+   }while(*ps!=' '&&(p!=l-1));
+  }
+  printf("\n");
+  ps++;
+}
+return 0;
+
+}
+
+/*---------------------------------------------------------------------------*/

@@ -1,0 +1,26 @@
+#!/bin/bash
+#--------------------------------------------------------------------
+
+
+echo "Enter charecter  "
+read char
+var='0'
+for a in $char ;do
+    mkdir $a
+    d='.'
+        for b in `seq 3 5` ;do
+        mkdir $a/$a$b
+    grep ^$a$d$char$ -i /usr/share/dict/words > $a/$a$b/$a$b.txt
+
+    word=`cat $a/$a$b/$a$b.txt | wc -w`
+    if [ $word -gt $var ]
+    then
+         var=$word
+         fn=$a$b.txt
+    fi
+    d="."$d
+    done
+done
+echo $fn contain $var words    
+
+

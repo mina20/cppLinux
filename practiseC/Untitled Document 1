@@ -1,0 +1,5 @@
+y<-iris[1:100]
+z<-iris[y,(-3,-4)]
+tst<-iris[1:30]
+tran<-iris[31:100]
+knn.dist(x, dist.meth = "euclidean", p = 2)

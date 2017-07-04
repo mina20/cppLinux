@@ -1,0 +1,26 @@
+#include<iostream>
+
+using namespace std;
+void display(int n)
+{
+cout
+<<
+n
+<<
+endl;
+}
+void display(char *str)
+{
+cout
+<<
+str
+<<
+endl;
+}
+int main()
+f
+display(``Hi!'');
+ //display(char *) gets called
+display(5);
+ //display(int) gets called  
+}

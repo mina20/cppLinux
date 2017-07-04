@@ -1,0 +1,59 @@
+/*
+  WAP to generate Pascal’s triangle and print it in the form of a pyramid. 
+*/
+
+#include <stdio.h>
+int main()
+{
+	int n, x, i, c, j;
+	printf("Enter no of rows: ");
+	scanf("%d",&n);
+	for (i=0;i<n;i++)
+	{
+		c=1;
+		for(j=0;j<n-i;j++)
+		{
+			printf("%3s", " ");
+		}
+		for (x=0;x<=i;x++)
+		{
+			printf("   %3d ",c);
+			c=c*(i-x)/(x+1);
+		}
+		printf("\n");
+	}
+	printf("\n");
+	return 0;
+}
+
+/* 
+ * Output
+
+/ha@sixteen ~]$ vi CMS1309_assign_2.5.c
+[pratiksha@sixteen ~]$ gcc CMS1309_assign_2.5.c
+[pratiksha@sixteen ~]$ ./a.out 
+Enter no of rows: 3
+              1 
+           1      1 
+        1      2      1 
+
+[pratiksha@sixteen ~]$ ./a.out 
+Enter no of rows: 4
+                 1 
+              1      1 
+           1      2      1 
+        1      3      3      1 
+
+[pratiksha@sixteen ~]$ ./a.out 
+Enter no of rows: 5
+                    1 
+                 1      1 
+              1      2      1 
+           1      3      3      1 
+        1      4      6      4      1 
+
+[pratiksha@sixteen ~]$ 
+ 
+ */
+
+

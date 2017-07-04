@@ -1,0 +1,7 @@
+Q1. Read a string from user,
+if the string is not "exit",
+goto step 1.
+
+Q2. Read an integer (N)
+Make sure that 1<=N<=100
+Find out if N is PRIME.

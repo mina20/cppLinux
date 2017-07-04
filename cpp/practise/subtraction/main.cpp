@@ -1,0 +1,10 @@
+#include"sub.h"
+
+int main()
+  {
+    Sum s1;
+    s1.getdata();
+    s1.putdata();
+    return 0;
+ }
+

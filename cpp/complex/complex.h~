@@ -1,0 +1,28 @@
+#include<iostream>
+
+
+class Complex
+{
+ public:
+    double real, imag;
+ 
+ 
+    Complex();
+    Complex(const double x, const double y);
+    Complex(const Complex& c);
+    double getReal() const;
+    double getImag() const;
+    void set(const double x, const double y);
+    void conjugate(const double x, const double y);
+    void phase(const double x, const double y);
+    void magnitude(const double x, const double y);
+
+    Complex operator=(const Complex c);
+    Complex operator+(Complex c) ;
+    Complex operator-(Complex c) ;
+    Complex operator*(Complex c) ;
+    Complex operator/(Complex c) ;
+
+   // friend std::ostream& operator<<(std::ostream& os, const Complex& c);
+   // friend std::istream& operator>>(std::istream& os, const Complex& c);
+};

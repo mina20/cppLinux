@@ -1,0 +1,38 @@
+/*
+Assignment:
+
+Accept a string of characters from user and reverse it using a pointer.
+Print the reversed string. For example, if user enters “I am a singer”
+the output should be “regnis a ma I”.
+
+-----------------------------------------------------------------------------*/
+
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+char str[50];
+char *pC;
+int n,i,a;
+
+printf("\nEnter a string->");
+Gets(str);
+printf("The string is \n%s\n",str);
+
+a=strlen(str);
+printf("\n%d",a);
+pC=&str[i];
+printf("\nRevrese string is\n");
+for(i=a-1;i>=0;i--)
+	{
+
+		printf("%c",*pC);
+		pC--;	
+	}
+printf("\n");
+
+return 0;
+}
+
+/*--------------------------------------------------------------------------*/

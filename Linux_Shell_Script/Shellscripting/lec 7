@@ -1,0 +1,51 @@
+vaibhavk@cl18:~/Shellscripting/23-03$ ls -al /lib | grep ^-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+vaibhavk@cl18:~/Shellscripting/23-03$ ls -al /lib | grep ^- |sed "s/root/`whoami`/g"
+
+-rwxr-xr-x  1 vaibhavk vaibhavk  70680 Mar 30  2012 klibc-bhN-zLH5wUTKSCGch2ba2xqTtLE.so
+-rw-r--r--  1 vaibhavk vaibhavk  51928 Apr 10  2012 libbrlapi.so.0.5.6
+-rw-r--r--  1 vaibhavk vaibhavk  97072 Apr 14  2012 libcryptsetup.so.4.0.0
+-rw-r--r--  1 vaibhavk vaibhavk  18712 Jan 16  2014 libdevmapper-event.so.1.02.1
+-rw-r--r--  1 vaibhavk vaibhavk 143296 Jan 16  2014 libdevmapper.so.1.02.1
+-rw-r--r--  1 vaibhavk vaibhavk 217544 May 15  2015 libfuse.so.2.8.6
+-rw-r--r--  1 vaibhavk vaibhavk  39584 Sep 28  2012 libgssglue.so.1.0.0
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+vaibhavk@cl18:~/Shellscripting/23-03$ ls -al /lib | grep ^- |sed "s/root/`whoami`/g" | head -n10    ****** First 10 entries
+
+-rwxr-xr-x  1 vaibhavk vaibhavk  70680 Mar 30  2012 klibc-bhN-zLH5wUTKSCGch2ba2xqTtLE.so
+-rw-r--r--  1 vaibhavk vaibhavk  51928 Apr 10  2012 libbrlapi.so.0.5.6
+-rw-r--r--  1 vaibhavk vaibhavk  97072 Apr 14  2012 libcryptsetup.so.4.0.0
+-rw-r--r--  1 vaibhavk vaibhavk  18712 Jan 16  2014 libdevmapper-event.so.1.02.1
+-rw-r--r--  1 vaibhavk vaibhavk 143296 Jan 16  2014 libdevmapper.so.1.02.1
+-rw-r--r--  1 vaibhavk vaibhavk 217544 May 15  2015 libfuse.so.2.8.6
+-rw-r--r--  1 vaibhavk vaibhavk  39584 Sep 28  2012 libgssglue.so.1.0.0
+-rw-r--r--  1 vaibhavk vaibhavk  27288 Mar  8  2013 libip4tc.so.0.0.0
+-rw-r--r--  1 vaibhavk vaibhavk  31416 Mar  8  2013 libip6tc.so.0.0.0
+-rw-r--r--  1 vaibhavk vaibhavk  10568 Mar  8  2013 libipq_pic.so.0.0.0
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+vaibhavk@cl18:~/Shellscripting/23-03$ bc -ql     ********   bc is a calculator    -ql is for good mathamatical operration 
+2+23
+25
+2.45*2.3
+5.635
+s(0)			**************** sin(0)
+0
+sqrt(4)
+2.00000000000000000000
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+vaibhavk@cl18:~/Shellscripting/23-03$ echo " 2 + 2 " | bc -lq
+4
+vaibhavk@cl18:~/Shellscripting/23-03$ echo " 2 > 3 " | bc -lq
+0
+vaibhavk@cl18:~/Shellscripting/23-03$ echo " 2 < 3 " | bc -lq
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+#SIR model
+#Author: sameena shaikh
+#ROll No. CMS1329
+
+SIR <- function(s,i,r=0,n=200,B=0.1,g=0.05)
+{
+        B<-0.1
+        g<-0.05
+        m<-0.002
+        h<-1
+	N <- s+i+r
+	S <- NULL
+	I <- NULL
+	R <- NULL
+	S[1] <- s
+	I[1] <- i
+	R[1] <- r
+	
+	for(i in 1:(n/h))
+	{
+		S[i+1] <- S[i] - B*S[i]*I[i]*(h/N) + m*(N-S[i])*h
+		I[i+1] <- I[i] + B*S[i]*I[i]*(h/N) - g*I[i]*h - m*I[i]*h
+		R[i+1] <- R[i] + g*I[i]*h - m*R[i]*h
+		
+	}
+	#pdf("S-I-R Model_with_birth_and_death_rate.pdf")
+	plot(S,ylim=(c(min(c(S,I,R)),max(c(S,I,R)))),type="l",col="blue",main="S-I-R Model",ylab="Susceptible,Recovered,Infected",xlab="Days")
+	lines(I,col="red")
+	lines(R,col="green")
+	legend("topright",c("Susceptible","Recovered","Infected"),pch="--",col=c("blue","green","red"))
+	#dev.off()
+}
+
+B <- seq(0.1, 0.5 , by =0.1)
+g <- seq(0.01, 0.05, by =0.01)
+pdf("S-I-R Model with different birth and death rate.pdf")
+for( i in B)
+	{
+		for(j in g)
+		{
+			par(mfrow = c(2,1))
+			SIR(1000,10,r=0,200,B= i, g= j)
+		}
+
+	}
+
+dev.off()

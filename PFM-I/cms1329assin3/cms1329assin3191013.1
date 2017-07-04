@@ -1,0 +1,30 @@
+
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+char str[50];
+char *pC;
+int n,i,a;
+
+printf("\nEnter a string->");
+Gets(str);
+printf("The string is \n%s\n",str);
+
+a=strlen(str);
+printf("\n%d",a);
+pC=&str[i];
+printf("\nRevrese string is\n");
+for(i=a-1;i>=0;i--)
+	{
+
+		printf("%c",*pC);
+		pC--;	
+	}
+printf("\n");
+
+return 0;
+}
+
+/*--------------------------------------------------------------------------*/

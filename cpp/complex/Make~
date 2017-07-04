@@ -1,0 +1,4 @@
+complex: main.cpp Complex.cpp
+g++ -o complex main.cpp Complex.cpp \
+-I.
+

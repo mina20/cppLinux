@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Demo program to illustrate the variables
+#A program by Vaibhav K on 16 feb 2016
+
+#...............................
+
+
+echo "Enter somthing"
+read -t3 var
+echo "Enter: "$var
+
+
+
+
+
+
+

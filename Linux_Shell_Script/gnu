@@ -1,0 +1,2 @@
+plot "tmp" with line linewidth 3
+pause -1

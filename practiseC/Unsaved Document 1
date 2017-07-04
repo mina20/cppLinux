@@ -1,0 +1,13 @@
+#include<stdio.h>
+main(0
+{
+  int r,num,reverse=0;
+  printf("Enter any numbera");
+  scanf("%d",&num);
+  for(;num!=0;num=num/10)
+  {
+    r=num%10;
+    reverse=reverse*10+r;
+  }
+   printf("\nReverse numbers is:%d",reverse);
+ }  

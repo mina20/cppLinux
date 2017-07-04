@@ -1,0 +1,6 @@
+this is the first line
+This is line with ERROR
+there are several ERRORS
+I  am tired of ERRORS
+this plain line
+this should not have any ERROR

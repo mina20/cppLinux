@@ -1,0 +1,1 @@
+plot "3" with line linewidth 3, "4" w l lw 2,"5" w l lw 2

@@ -1,0 +1,18 @@
+//Author: Amit Nandi
+//Roll No.-CMS1503
+//queen_main.cpp
+
+#include"queen_header.h"
+
+int main()
+{
+
+Queen b;
+cout<<"\nSolution for the 8 Queen Problem:\n"<<endl;
+b.solveQueen();
+cout<<"\n";
+
+return 0;
+
+}
+

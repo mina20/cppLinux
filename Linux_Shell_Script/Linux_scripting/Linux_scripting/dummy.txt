@@ -1,0 +1,8 @@
+This is the first line
+cat > dummy.txt << EOF
+This is the first line
+
+This is line with error
+There are several errors
+Errors
+This is the last line

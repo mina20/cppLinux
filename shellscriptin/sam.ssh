@@ -1,0 +1,14 @@
+#!/bin/bash
+#practise programe
+
+
+
+#----------------
+var = "Enter some thing"
+echo $var
+
+
+
+
+
+# program ends here  

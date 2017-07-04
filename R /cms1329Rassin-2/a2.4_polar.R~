@@ -1,0 +1,21 @@
+#Name 	: Shriram Nerkar
+#Roll 	: CMS1303
+#Program : Design of R function to draw polar plot
+
+#installed libary using install.packages("library name")
+#after that load the library using library(plotrix)
+library(plotrix)
+
+#saving R graphics output in pdf format
+
+#function tom draw polar plot and taking r and thita and input vector from user
+
+#polar.plot first argument data vector(r),then (thita),start=90,clockwise=TRUE,rp.type="s"(thatis=symbols,....)
+polar_plot=function(r,thita)
+{
+	polar.plot(r,thita,start=90,clockwise=TRUE,rp.type="s",
+	point.symbols=19,radial.lim=c(0,5),boxed.radial=FALSE, 
+	show.grid.labels=2)
+}
+
+

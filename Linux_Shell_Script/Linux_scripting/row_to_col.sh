@@ -1,0 +1,8 @@
+#!/bin/sh
+
+ls /etc/ | awk '/conf/ {print $0}' |wc -l
+ls /etc/ | awk '/^[ax].*.conf$/ {print $0}' | wc -l
+sed's/ /\n/g'
+cat /etc/passwd | sed 's/:/ /g' | awk 'BEGIN {print "User Name \t | Real Name\n.................|........."} /guest/{print $1 "\t | " $5}'| sed 's/,,,/ /g'
+
+

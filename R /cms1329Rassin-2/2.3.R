@@ -1,0 +1,16 @@
+
+digits=function(num,base)
+{
+
+	r<-c( );
+	while(num>0)
+	{
+		remainder<-num%%base;
+		num<-floor(num/base);
+		r<-c(r,remainder)
+	}
+	print("Decimal to Base Number System LSB as first digit")
+	r<-rev(r)
+	print(r)
+}
+

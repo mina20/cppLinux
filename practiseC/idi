@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<string.h>
+#define max 50
+main()
+ {
+   int i;
+   char a[max];
+   printf("Enter a string):
+   gets(a)
+   for(i=0;a[i]!='\0';i++)
+   {
+     if((a[i]>='a'&&a[i]<='z')||(a[i]>='A'&&a[i]<='Z'))
+      printf("you enter charectoe")
+     else if(a[i]>=0&&a[i]<=9)
+     printf("You have enter digit");
+     else
+     printf("You have enter special charector");
+  }
+} 

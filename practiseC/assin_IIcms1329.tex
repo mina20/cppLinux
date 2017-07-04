@@ -1,0 +1,45 @@
+\documentclass[11pt]{article}
+\usepackage{parskip}
+%\setlength{\parindent}{15pt}
+\begin{document}
+\begin{center}
+{\huge This is title}
+\vspace{10 mm}
+{\\ \Large{Balchandra pujari}}
+\vspace{5 mm}
+{\\ \normalsize{January 15,2014}}
+\vspace{10 mm}
+\small \bf{\\Abstract}
+\end{center}
+\begin{flushleft}
+\hspace{3 mm}
+{This is an abstract.There is an {\it environment} to creat a abstract and one to creat this title page.}
+\end{flushleft}
+\vspace{3 mm}
+\begin{flushleft}
+\section{\Large\bf This is the first `section'}
+\subsection{\normalsize This is first `sub-section'}
+\subsubsection{\small This is first `sub-sub-section'}
+ I have created this article as an example. The goal is to learn the \LaTeX{}. \break Now note that I am going to change to the next paragraph.
+\par \hspace{3mm} This is the paragraph and not just a new line. Note that there is so \break called `indentation'. Also note that when you give the quotation marks \nolinebreak they \newline appear correct.Below is an equation(with the number)
+\end{flushleft}
+\begin{center}
+\begin{equation}
+\frac{\partial \Psi}{\partial \vec{x}}=\sin({\theta})
+\end{equation}
+\end{center}
+\begin{flushleft}
+{\normalsize But the following does not have a number (and note that I did not \\ use \textbackslash {\bf nonnumber} command)}
+\end{flushleft}
+\begin{center}
+$\lim \limits_{x \rightarrow \infty} \int{x^2}{e^{\frac{x}{2}}}=0$
+\end{center}
+\begin{flushleft}
+{(too many backets?)}
+\end{flushleft}
+\begin{flushright}
+{Here is the text that is aligned to right!\\This is the new line on the right side.}
+\end{flushright}
+\end{document}
+
+

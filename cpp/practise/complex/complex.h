@@ -1,0 +1,18 @@
+
+#include<iostream>
+
+using namespace std;
+
+class Complex
+     {
+
+       private :
+       int r1,r2,a1,a2;
+       public :
+       void operator +();
+       void operator -();
+       void operator *();
+       void getdata();
+       void putdata();
+    };
+

@@ -1,0 +1,2 @@
+/shellscriptin$ ls -al /lib | grep ^-| sed "s/root/`whoami`/" |head -n10
+
